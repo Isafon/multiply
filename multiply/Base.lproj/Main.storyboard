@@ -102,13 +102,28 @@
                                     <action selector="clearButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dZc-a5-L9r"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="funnyPic" translatesAutoresizingMaskIntoConstraints="NO" id="pY3-Ue-KVP">
+                                <rect key="frame" x="204" y="397" width="193" height="194"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="funnyPic2" translatesAutoresizingMaskIntoConstraints="NO" id="HFY-H1-kWk">
+                                <rect key="frame" x="12" y="599" width="382" height="178"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="diddyKong" translatesAutoresizingMaskIntoConstraints="NO" id="9JR-Le-RJU">
+                                <rect key="frame" x="9" y="397" width="184" height="194"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                     </view>
                     <connections>
                         <outlet property="answerOutputLabel" destination="O18-Cl-cFt" id="LFv-gu-qyv"/>
+                        <outlet property="diddyKongImage" destination="9JR-Le-RJU" id="Yaq-v0-9lk"/>
                         <outlet property="firstNumberTextField" destination="YC3-gz-2Hv" id="rap-md-oz2"/>
+                        <outlet property="funnyPic" destination="pY3-Ue-KVP" id="dwe-fb-au0"/>
+                        <outlet property="funnyPic2" destination="HFY-H1-kWk" id="MLq-aZ-YhG"/>
                         <outlet property="mathSignLabel" destination="2gx-4w-ofO" id="2Ay-rf-kU9"/>
                         <outlet property="secondNumberTextField" destination="dOM-qJ-Adh" id="iqz-8R-aW0"/>
                     </connections>
@@ -119,6 +134,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="diddyKong" width="820" height="869"/>
+        <image name="funnyPic" width="224" height="225"/>
+        <image name="funnyPic2" width="640" height="586"/>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

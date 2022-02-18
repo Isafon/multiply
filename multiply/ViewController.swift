@@ -52,11 +52,12 @@ class ViewController: UIViewController {
         
         if multiply == multiply%2 {
             funnyPic.isHidden = false
+            funnyPic2.isHidden = true
         } else {
             funnyPic.isHidden = true
+            funnyPic2.isHidden = false
         }
-  
-        
+
  
         
     }
@@ -78,6 +79,15 @@ class ViewController: UIViewController {
         secondNumberTextField.resignFirstResponder()
         
         diddyKongImage.isHidden = true
+        
+        if divide == divide%2 {
+            funnyPic.isHidden = false
+            funnyPic2.isHidden = true
+        } else {
+            funnyPic.isHidden = true
+            funnyPic2.isHidden = false
+        }
+  
     }
 
 //Add Button:
@@ -98,6 +108,17 @@ class ViewController: UIViewController {
         secondNumberTextField.resignFirstResponder()
         
         diddyKongImage.isHidden = true
+        
+        if add == add%2 {
+            funnyPic.isHidden = false
+            funnyPic2.isHidden = true
+        } else {
+            funnyPic.isHidden = true
+            funnyPic2.isHidden = false
+        }
+  
+        
+        
     }
     
 //Subtract Button:
@@ -118,14 +139,35 @@ class ViewController: UIViewController {
         secondNumberTextField.resignFirstResponder()
         diddyKongImage.isHidden = true
         
+        if subtract == subtract%2 {
+            funnyPic.isHidden = false
+            funnyPic2.isHidden = true
+        } else {
+            funnyPic.isHidden = true
+            funnyPic2.isHidden = false
+        }
+  
+        
     }
 
 //CLEAR BUTTON (GETS RID OF EVERYTHING):
     
     @IBAction func clearButton(_ sender: UIButton) {
+        firstNumberTextField.clearButtonMode = .always
+        secondNumberTextField.clearButtonMode = .always
+        diddyKongImage.isHidden = true
+        funnyPic2.isHidden = true
+        funnyPic.isHidden = true
+
     }
     
-  
+    @IBAction func slider1(_ sender: Any) {
+    }
+    
+    
+    @IBAction func slider2(_ sender: Any) {
+    }
+    
     
     
     override func viewDidLoad() {

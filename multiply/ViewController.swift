@@ -160,6 +160,8 @@ class ViewController: UIViewController {
         diddyKongImage.isHidden = true
         funnyPic2.isHidden = true
         funnyPic.isHidden = true
+        firstNumberTextField.text = ""
+        secondNumberTextField.text = ""
        
         
 

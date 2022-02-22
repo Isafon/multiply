@@ -162,6 +162,7 @@ class ViewController: UIViewController {
         funnyPic.isHidden = true
         firstNumberTextField.text = ""
         secondNumberTextField.text = ""
+        answerOutputLabel.text = "Answer"
        
         
 

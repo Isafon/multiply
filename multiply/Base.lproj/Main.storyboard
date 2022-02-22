@@ -114,14 +114,14 @@
                                     <action selector="clearButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dZc-a5-L9r"/>
                                 </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="thp-rt-i7f">
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1000" translatesAutoresizingMaskIntoConstraints="NO" id="thp-rt-i7f">
                                 <rect key="frame" x="148" y="200" width="118" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="slider1:" destination="BYZ-38-t0r" eventType="valueChanged" id="EhS-li-ovr"/>
                                 </connections>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="5sZ-CT-eJL">
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1000" translatesAutoresizingMaskIntoConstraints="NO" id="5sZ-CT-eJL">
                                 <rect key="frame" x="355" y="199" width="118" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
@@ -140,6 +140,8 @@
                         <outlet property="funnyPic2" destination="HFY-H1-kWk" id="MLq-aZ-YhG"/>
                         <outlet property="mathSignLabel" destination="2gx-4w-ofO" id="2Ay-rf-kU9"/>
                         <outlet property="secondNumberTextField" destination="dOM-qJ-Adh" id="iqz-8R-aW0"/>
+                        <outlet property="slider1" destination="thp-rt-i7f" id="41R-4c-qaG"/>
+                        <outlet property="slider2" destination="5sZ-CT-eJL" id="hQq-zN-9W4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

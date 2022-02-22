@@ -21,8 +21,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var funnyPic: UIImageView!
     
     @IBOutlet weak var funnyPic2: UIImageView!
+    @IBOutlet weak var slider2: UISlider!
     
-//Multiply Button:
+    @IBOutlet weak var slider1: UISlider!
+    //Multiply Button:
     
     @IBAction func multiplyButtonTapped(_ sender: UIButton) {
         mathSignLabel.text = "x"
@@ -158,14 +160,38 @@ class ViewController: UIViewController {
         diddyKongImage.isHidden = true
         funnyPic2.isHidden = true
         funnyPic.isHidden = true
+       
+        
 
     }
     
-    @IBAction func slider1(_ sender: Any) {
+    @IBAction func slider1(_ sender: UISlider) {
+        
+        let currentValue = Int(sender.value)
+                
+            firstNumberTextField.text = "\(currentValue)"
+        
+//        slider1.value
+//            slider1.minimumValue = 0
+//            slider1.maximumValue = slider1.value
+//
+//            firstNumberTextField.text = String(slider1.value)
     }
     
     
-    @IBAction func slider2(_ sender: Any) {
+    @IBAction func slider2(_ sender: UISlider) {
+        let currentValue = Int(sender.value)
+                
+            secondNumberTextField.text = "\(currentValue)"
+        
+      /*  guard let data = secondNumberTextField.text, !data.isEmpty, let secondNumber = Int(data) else
+        {return}
+        
+        secondNumberTextField = secondNumber
+                
+        let secondNumberString = secondNumberTextField.text ?? ""
+        var currentValue2 = Int(secondNumberString) ?? 0
+        secondNumberTextField.text = "\(currentValue2)" */
     }
     
     
